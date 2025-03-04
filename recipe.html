@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recipe Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./functions.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="title">Smart Recipe Finder</h1>
+        <div class="search">
+            <input type="text" id="ingredients" class="search-bar" placeholder="Enter ingredients (comma separated)">
+            
+            <button onclick="fetchRecipes()">🔍</button>
+            <div class="lang-container">
+                <i class="fas fa-language"></i>
+                <select name="lang" id="languageSelect" onchange="changeLanguage(event)">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="recipe-container" id="recipes"></div>
+
+</body>
+</html>
